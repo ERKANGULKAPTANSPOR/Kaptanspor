@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KAPTANSPOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="/Home/Index">KAPTANSPORADİDAS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                @if (User.IsInRole("A"))
+                {
+                    <li><a href="/Account/Register">Kullanıcılar</a></li>
+                    <li><a href="/Urun/Index">Ürünler</a></li>
+                    <li><a href="/TumSatislar1/Index">TümSatislar</a></li>
+                    <li><a href="/Kategori/Index">Kategoriler</a></li>
+                    <li><a href="/Urun/KritikStok">KritikStok @Html.Action("StokCount", "Urun")</a></li>
+                    <li><a href="/Urun/StokGrafik">StokGrafik</a></li>
+                    <li><a href="/Urun/Urunler">HTT Ürün Bazlı Sorgulama</a></li>
+                    <li><a href="/Urun/Urunler5">HTT Stok Yeri Sorgulama</a></li>
+                    <li><a href="/Urun/Urunler2">HTT Tarih Bazlı Siparişe Açık Stoklar</a></li>
+                    <li><a href="/Urun/Urunler6">Barkodla Ürün Sorgulama</a></li>
+                    <li><a href="/istatistik1/Index">İstatistikler</a></li>
+                }
+                <li><a href="/Urun/Urunler7">HTT Son Bir Günlük Sipariş Listesi</a></li>
+                <li><a href="/Kategori/Index">UrunFiyatİzleme</a></li>
+                <li><a href="#">BirimlerArasıGirisCıkıs</a></li>
+                <li><a href="#">StokFiyatİzleme</a></li>
+                <li>
+                    <a href="#">StokYeriSorma</a>
+                    @if (User.IsInRole("U"))
+                    {
+
+                    <li><a href="/Satıs/Index">PersonelSatısMiktarı</a></li>
+                    <li><a href="#">StokYeriSorma</a></li>
+                    <li><a href="/Urun/Index">Ürünler</a></li>
+                    <li><a href="/Sepet/Index"><img src="~/Content/Image/resim9.jpg" width="30" height="30" /><label>@{Html.RenderAction("SepetCount", "Sepet");}</label></a></li>
+
+                }
+
+                    <li><a href="/Account/LogOut">Çıkıs Yap</a></li>
+                    <li><a href="/Account/Guncelle" style="color:white">@Session["Ad"] @Session["Soyad"]</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+</body>
+</html>

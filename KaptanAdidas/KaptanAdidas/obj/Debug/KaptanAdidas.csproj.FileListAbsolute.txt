@@ -1,0 +1,579 @@
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanSporAdidas\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+C:\Users\GarikTasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+C:\Users\erkan\OneDrive\Masaüstü\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+C:\Users\BeraArge\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+E:\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+E:\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+E:\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+E:\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+E:\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+E:\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+E:\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+E:\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+E:\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+E:\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+E:\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+E:\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+E:\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+E:\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+E:\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+E:\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+E:\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+E:\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+E:\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll.config
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\KaptanAdidas.pdb
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.exe.config
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csc.rsp
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.exe.config
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\csi.rsp
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.AppContext.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Console.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Compression.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Claims.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.ValueTuple.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.exe.config
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\vbc.rsp
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\EntityFramework.SqlServer.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\PagedList.Mvc.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Razor.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Webpages.Razor.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Helpers.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Web.Mvc.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csprojAssemblyReference.cache
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CoreCompileInputs.cache
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.csproj.CopyComplete
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\obj\Debug\KaptanAdidas.pdb
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Win32.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\netstandard.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.AppContext.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Collections.Concurrent.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Collections.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Collections.NonGeneric.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Collections.Specialized.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ComponentModel.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ComponentModel.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Console.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Data.Common.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.Contracts.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.Debug.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.Process.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.StackTrace.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.Tools.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.TraceSource.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Diagnostics.Tracing.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Drawing.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Dynamic.Runtime.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Globalization.Calendars.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Globalization.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Globalization.Extensions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.Compression.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.Compression.ZipFile.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.FileSystem.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.IsolatedStorage.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.Pipes.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Linq.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Linq.Expressions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Linq.Parallel.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Linq.Queryable.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Http.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.NameResolution.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.NetworkInformation.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Ping.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Requests.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Security.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.Sockets.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.WebHeaderCollection.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.WebSockets.Client.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Net.WebSockets.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ObjectModel.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Reflection.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Reflection.Extensions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Reflection.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Resources.Reader.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Resources.ResourceManager.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Resources.Writer.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Extensions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Handles.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.InteropServices.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Numerics.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Serialization.Json.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Claims.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Cryptography.Csp.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.Principal.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Security.SecureString.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Encoding.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Encoding.Extensions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.RegularExpressions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Overlapped.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Tasks.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Thread.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.ThreadPool.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Timer.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.ReaderWriter.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.XDocument.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.XmlDocument.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.XmlSerializer.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.XPath.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Xml.XPath.XDocument.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\BarcodeStandard.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Buffers.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Drawing.Common.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Memory.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Numerics.Vectors.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Encodings.Web.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Json.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ValueTuple.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Buffers.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Memory.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Numerics.Vectors.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Encodings.Web.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Text.Json.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\System.ValueTuple.xml
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Newtonsoft.Json.dll
+C:\Users\Web Tasarım\Desktop\KaptanAdidas\KaptanAdidas\bin\Newtonsoft.Json.xml

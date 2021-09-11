@@ -1,0 +1,55 @@
+﻿@model KaptanAdidas.Objects.MusteriAraNesnesi
+@{
+    ViewBag.Title = "MusteriEkle";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<form method="post" action="/Musteri/MusteriEkle">
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-header border-0">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3 class="mb-0">Müşteri Ekleme Ekranı</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="form-group row">
+                        <label class="col-sm-2">ADI</label>
+                        <input class="col-sm-7" for="ADI" name="ADI" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">SOYADI</label>
+                        <input class="col-sm-7" for="SOYADI" name="SOYADI" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">ADRESI</label>
+                        <input class="col-sm-7" for="ADRES1" name="ADRES1" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">EPOSTA</label>
+                        <input class="col-sm-7" for="EPOSTA" name="EPOSTA" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">ILCE_SEMT</label>
+                        <input class="col-sm-7" for="ILCE_SEMT" name="ILCE_SEMT" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">TELEFON</label>
+                        <input class="col-sm-7" for="TELEFON1" name="TELEFON1" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2">UNVANI</label>
+                        <input class="col-sm-7" for="UNVAN1" name="UNVAN1" />
+                    </div>
+                    <div class="form-group row">
+                        <button type="submit" class="btn btn-primary">KAYDET</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

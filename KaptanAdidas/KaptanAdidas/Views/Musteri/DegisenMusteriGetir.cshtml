@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "DegisenMusteriGetir";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var musteriler = ViewBag.Musteriler;
+    DateTime dt = ViewBag.Date;
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form method="post" action="/Musteri/DegisenMusteriGetir">
+                            <input type="date" placeholder="Ürün ID sini girin" name="date" />
+                            <button class="btn btn-primary">ARA</button><br /><br />
+                            <input type="text" placeholder="Musteri ID'ye göre ara" name="ID" />
+                            <button class="btn btn-primary">ARA</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">( @dt.ToString("dd, MMMM yyyy") Tarihinden İtibaren (@(musteriler != null && musteriler.Musteriler != null && musteriler.Musteriler.Length > 0 ? musteriler.Musteriler.Length : 0) Kişi) ) Bilgisi Güncellenen Müşteriler Ekranı</h3>
+                    </div>
+                    <div class="col text-right">
+                        @*<a href="/Urun/Urunler2" class="btn btn-sm btn-primary">TARİH ARALIKLI SİPARİŞE AÇIK STOK LİSTESİ</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Cep Tel</th>
+                            <th>Müşteri ID</th>
+                            <th>Müşteri Bilgisi</th>
+                            <th>Adresi</th>
+                            <th>Email</th>
+                            <th>İlçe Bilgisi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (musteriler != null && musteriler.Musteriler != null && musteriler.Musteriler.Length > 0)
+                        {
+                            foreach (var item in musteriler.Musteriler)
+                            {
+                                <tr>
+                                    <td scope="row">
+                                        @item.CepTel
+                                    </td>
+                                    <td>@item.MusteriSistemNo</td>
+                                    <td>@item.MusteriAdi @item.MusteriSoyadi</td>
+                                    <td>@item.Adres</td>
+                                    <td>@item.EMail</td>
+                                    <td>@item.IlceSemt</td>
+
+                                </tr>
+
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Urunler5";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var resultObj = ViewBag.ResultObj;
+    var resultObj2 = ViewBag.ResultObj2;
+}
+
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form method="post" action="/Urun/Urunler5">
+                            <span>StokSistemNo(OID) :</span>
+                            <input type="text" placeholder="Stok Sistem No sini girin" name="stokoid2" />
+                            <button class="btn btn-primary">ARA</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">STOK YERİ SORGULAMA</h3>
+                    </div>
+                    <div class="col text-right">
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <tr>
+                        <th scope="col">STOK ADİ</th>
+                        <th>MARKA ADİ</th>
+                        <th>MARKA KODU</th>
+                        <th>MARKASİSTEMNO</th>
+                        <th>STOKKODU</th>
+                        <th>STOKSİSTEMNO</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">@resultObj2.StokAdi</td>
+                        <td>@resultObj2.MarkaAdi</td>
+                        <td>@resultObj2.MarkaKodu</td>
+                        <td>@resultObj2.MarkaSistemNo</td>
+                        <td>@resultObj2.StokKodu</td>
+                        <td>@resultObj2.StokSistemNo</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h3 class="mb-0">STOK MAĞAZA LİSTESİ</h3>
+                    </div>
+                    <div class="col text-right">
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <td>BARKOD</td>
+                            <td>MAĞAZA</td>
+                            <td>STOK KODU</td>
+                            <td>MİKTAR</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (resultObj.StokList != null)
+                        {
+                            foreach (var item in resultObj.StokList)
+                            {
+                                <tr>
+                                    <td>@item.BARKOD</td>
+                                    <td>@item.ALT_YER_ACIKLAMA</td>
+                                    <td>@item.STOK_KODU</td>
+                                    <td>@item.STOK_MIKTARI</td>
+                                </tr>
+
+                            }
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>

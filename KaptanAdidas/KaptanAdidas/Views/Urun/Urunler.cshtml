@@ -1,0 +1,99 @@
+﻿@using KaptanAdidas.Models
+@model  List<Urun>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var resultObj = ViewBag.ResultObj;
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form method="post" action="/Urun/Urunler">
+                            <input type="text" placeholder="Ürün ID sini girin" name="stokid" />
+                            <button class="btn btn-primary">ARA</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">Ürün Bazlı Sorgulama Ekranı</h3>
+                    </div>
+                    <div class="col text-right">
+                        <a href="/Urun/Urunler2" class="btn btn-sm btn-primary">Tarih Aralıklı Ürün Listesini Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">STOKKODU</th>
+                            <th scope="col">STOK ADİ</th>
+                            <th scope="col">MARKA ADİ</th>
+                            <th scope="col">MARKA KODU</th>
+                            <th scope="col">MARKASİSTEMNO</th>
+                            <th scope="col">STOKSİSTEMNO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">@resultObj.StokKodu</td>
+                            <td>@resultObj.StokAdi</td>
+                            <td>@resultObj.MarkaAdi</td>
+                            <td>@resultObj.MarkaKodu</td>
+                            <td>@resultObj.MarkaSistemNo</td>
+                            <td>@resultObj.StokSistemNo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h3 class="mb-0">Alt Stok Beden Kodları</h3>
+                    </div>
+                    <div class="col text-right">
+                        @*<a href="/Urun/Urunler2" class="btn btn-sm btn-primary">Tarih Aralıklı Ürün Listesini Görüntüle</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive mt--6">
+
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Alt Stok 1 Kodu</th>
+                            <th scope="col">Alt Stok 2 Kodu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (resultObj.AltStoklar != null)
+                        {
+                            foreach (var item in resultObj.AltStoklar)
+                            {
+                                <tr>
+                                    <td scope="row">@item.AltStok1Kodu</td>
+                                    <td>@item.AltStok2Kodu</td>
+                                </tr>
+
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

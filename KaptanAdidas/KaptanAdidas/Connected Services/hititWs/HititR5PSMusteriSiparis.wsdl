@@ -1,0 +1,2797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.hititbt.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.hititbt.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.hititbt.com/">
+      <s:element name="BaglanilanDatabaseAdiniSorgula">
+        <s:complexType />
+      </s:element>
+      <s:element name="BaglanilanDatabaseAdiniSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BaglanilanDatabaseAdiniSorgulaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kullaniciKodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parola" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Kaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisBaslik" type="tns:SiparisBaslik" />
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="odemeSatirlari" type="tns:ArrayOfOdemeSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="dipIskontoSatirlari" type="tns:ArrayOfDipIskontoSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisBaslik">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TARIH" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZAMAN" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TAKIP_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HPRK_MUSTERI_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_SATISYERI_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HFIN_KASA_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SATIS_HGEN_PERSONEL_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_FIYAT_TIPI_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_FIYAT_SEKLI_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ORJ_PARA_BIRIMI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ORJ_KUR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOTLAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SOYADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POSTA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ILCE_SEMT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IL_TRAFIK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERGI_DAIRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERGI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TELEFON1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TELEFON2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TC_KIMLIK_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_BILGI1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_BILGI2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EPOSTA_ADRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TICARET_SICIL_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MERSIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ULKE_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CINSIYETI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_SOYADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ADRES1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ADRES2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ADRES3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_POSTA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ILCE_SEMT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_IL_TRAFIK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_VERGI_DAIRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_VERGI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TELEFON1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TELEFON2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TC_KIMLIK_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_OZEL_BILGI1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_OZEL_BILGI2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_EPOSTA_ADRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TICARET_SICIL_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_MERSIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_ULKE_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_CINSIYETI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TURIST_ADRES_IL_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TURIST_ADRES_ULKE_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TURIST_UYRUK_ULKE_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TURIST_PASAPORT_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FATURA_TURIST_PASAPORT_VERILIS_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEDIYE_PAKETI_YAPILACAK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEDIYE_NOTU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOJISTIK_ENTEGRASYONU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KARGO_FIRMASI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEPSIBURADA_YIK_BARKODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KARGO_HSTK_FIRMA_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAPIDA_ODEME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAPIDA_ODEME_TIPI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAPIDA_ODEME_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAPIDA_ODEME_HIZMET_BEDELI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_ETICARET_WEB_ADRESI_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EARSIV_GONDERIM_SEKLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EARSIV_ALICI_EPOSTA_ADRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BUKOLICODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BUKOLIID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KART_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFATURA_MUKELLEFI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFATURA_IDENTIFIER_NUMBER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFATURA_ALIAS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IPTAL_EDILECEK_SIPARIS_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IADE_EDILEN_FATURA_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IADE_EDILEN_FATURA_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IADE_EDILEN_FATURA_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IRSALIYE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFATURA_PROFILE_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EFATURA_UUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YNOKC_FIS_FATURA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YNOKC_CIHAZ_SERI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YNOKC_Z_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YNOKC_FIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SATIS_SEKLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DIPLOMATIK_SATIS_KISI_KURUM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IADE_BELGE_TIPI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PASIF_LOJISTIK_ENTEGRASYONU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_PROMOSYON_MASTER_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PERAKENDE_KAMPANYA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_SIPARIS_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOJISTIK_ISEMRI_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HARICI_SISTEM_TAKIP_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HARICI_SISTEM_TAKIP_NO_2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_TOPLAM_AMBALAJ_MIKTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_AMBALAJ_TIPI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_FCA_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_NAVLUN_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_SIGORTA_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_TESLIM_SEKLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_BANKA_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_SUBE_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IHRACAT_ODEME_SEKLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KARGO_IL_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KARGO_ILCE_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEVK_EIRSALIYE_ILE_YAPILIR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSiparisSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SiparisSatiri" nillable="true" type="tns:SiparisSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SiparisSatiri">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SATIS_HGEN_PERSONEL_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_STOK_ALTSTOK_SKU_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BARKOD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_STOK_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK2_KODU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MIKTAR" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BRUT_FIYAT" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ISKONTO_YUZDESI" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FIYAT" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="KDV_YUZDESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KDV_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_PROMOSYON_MASTER_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PERAKENDE_KAMPANYA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAZANILAN_PUAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_ARIZA_KODLARI_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_IADE_NEDENI_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IADE_NEDENI_AYRINTISI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ARIZALI_IADE_TAKIP_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GARANTI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TRANSFER_HSTK_ALTYER_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TRANSFER_IRSALIYE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT_KAMPANYASI_ORJ_FIYAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEVK_HSTK_ALTYER_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SATIR_SIRA_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_SIPARIS_DETAY_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM7" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM8" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM9" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_ISLEM10" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_TIPI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_TEDARIKCI_HSTK_FIRMA_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_UNIQUE_SKU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_SIPARIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_MARKA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_STOK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_STOK_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_BEDEN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_RENK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KOMISYON_YUZDESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KOMISYON_TUTARI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_VADE_GUNU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_BELGE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_FIRMASI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_BEDELI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOdemeSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OdemeSatiri" nillable="true" type="tns:OdemeSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OdemeSatiri">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ODEME_SEKLI" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HFIN_KART_TAKSIT_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HFIN_BANKA_HESAP_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARA_BIRIMI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ORJ_TUTAR" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ORJ_KUR" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TUTAR" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="KART_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HPRK_HEDIYE_CEKI_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEDIYE_CEKI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PROVIZYON_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VADE_TARIHI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDipIskontoSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DipIskontoSatiri" nillable="true" type="tns:DipIskontoSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DipIskontoSatiri">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HPRK_HEDIYE_CEKI_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEDIYE_CEKI_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="KDVLI_TUTAR" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="KART_PUAN_KULLANIMI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KART_KULLANILAN_PUAN" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Kullanici">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="KullaniciKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parola" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="KaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KaydetResult" type="tns:SiparisKaydetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisKaydetResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiparisSatiriSistemNolari" type="tns:ArrayOfSiparisSatiriSistemNo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSiparisSatiriSistemNo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SiparisSatiriSistemNo" nillable="true" type="tns:SiparisSatiriSistemNo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SiparisSatiriSistemNo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SATIR_SIRA_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SATIR_SISTEM_NO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="IptalEt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IptalEtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IptalEtResult" type="tns:SiparisIptalEtResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisIptalEtResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisSistemNo" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptaliKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisBaslik" type="tns:SiparisBaslik" />
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="odemeSatirlari" type="tns:ArrayOfOdemeSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="dipIskontoSatirlari" type="tns:ArrayOfDipIskontoSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptaliKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptaliKaydetResult" type="tns:SiparisIptaliKaydetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisIptaliKaydetResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisIptaliSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiparisIptaliSatiriSistemNolari" type="tns:ArrayOfSiparisIptaliSatiriSistemNo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSiparisIptaliSatiriSistemNo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SiparisIptaliSatiriSistemNo" nillable="true" type="tns:SiparisIptaliSatiriSistemNo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SiparisIptaliSatiriSistemNo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_SATIR_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SATIR_SISTEM_NO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriEkle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="musteri" type="tns:Musteri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Musteri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SOYADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UNVAN1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UNVAN2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADRES3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POSTA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ILCE_SEMT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IL_TRAFIK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERGI_DAIRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERGI_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TELEFON1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TELEFON2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WEB_ADRESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EPOSTA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OZEL_KOD4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TC_KIMLIK_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CINSIYETI" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MEDENI_DURUMU" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DOGUM_TARIHI" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TICARET_SICIL_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MERSIS_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KAMPANYALARDAN_HABERDAR_OLMA_TERCIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_SINIF_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TELEFON_DOGRULAMA_BILGISI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EPOSTA_DOGRULAMA_BILGISI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SMS_ILETISIM_IZNI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMAIL_ILETISIM_IZNI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CEP_TEL_ILETISIM_IZNI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KVKK_ONAYI_ALINDI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESKI_MUSTERI_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK2_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK3_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK4_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK5_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK6_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK7_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK8_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK9_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK10_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK11_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK12_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK13_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK14_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MUSTERI_NITELIK15_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOTLAR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriEkleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MusteriEkleResult" type="tns:MusteriKaydetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MusteriKaydetResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokEkleGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="satisYeriOid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="stokKarti" type="tns:StokKarti" />
+            <s:element minOccurs="0" maxOccurs="1" name="altStokKodlari" type="tns:ArrayOfStokAltStok" />
+            <s:element minOccurs="0" maxOccurs="1" name="fiyatlar" type="tns:ArrayOfStokFiyat" />
+            <s:element minOccurs="0" maxOccurs="1" name="barkodlar" type="tns:ArrayOfStokBarkod" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokKarti">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Aktif" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarkaKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarkaAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokKisaAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokKisaKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FaturaAciklama" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RenkAciklama" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EskiStokKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoklamaBirimKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlisBirimKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PerakendeSatisBirimKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToptanSatisBirimKodu" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AltStok1KullanimiVar" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AltStok2KullanimiVar" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SezonVar" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MevcutSezonKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IlkSezonKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlisKDVTipi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PerakendeSatisKDVTipi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToptanSatisKDVTipi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik1Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik1Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik2Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik2Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik3Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik3Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik4Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik4Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik5Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik5Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik6Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik6Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik7Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik7Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik8Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik8Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik9Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik9Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik10Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik10Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik11Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik11Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik12Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik12Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik13Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik13Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik14Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik14Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik15Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik15Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik16Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik16Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik17Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik17Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik18Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik18Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik19Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik19Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik20Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik20Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik21Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik21Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik22Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik22Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik23Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik23Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik24Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik24Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik25Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nitelik25Adi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RenkTakibiVar" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk1Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk1Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk2Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk2Adi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk3Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Renk3Adi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokTakibiVar" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="NegatifStokKontroluYapilir" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="BuyukResimWebAdresi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KucukResimWebAdresi" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStokAltStok">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokAltStok" nillable="true" type="tns:StokAltStok" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokAltStok">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AltStok1Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AltStok2Kodu" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStokFiyat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokFiyat" nillable="true" type="tns:StokFiyat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokFiyat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BaslangicTarihi" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="BitisTarihi" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReguleFiyat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fiyat" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParaBirimi" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStokBarkod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokBarkod" nillable="true" type="tns:StokBarkod" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokBarkod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Barkod" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AltStok1Kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AltStok2Kodu" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokEkleGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StokEkleGuncelleResult" type="tns:StokKaydetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokKaydetResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokResimWebAdresiGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stokResimAdresleri" type="tns:ArrayOfStokResimAdresi" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStokResimAdresi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokResimAdresi" nillable="true" type="tns:StokResimAdresi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokResimAdresi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_STOK_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BuyukResimWebAdresi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KucukResimWebAdresi" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokResimWebAdresiGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StokResimWebAdresiGuncelleResult" type="tns:ArrayOfStokResimWebAdresiGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStokResimWebAdresiGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokResimWebAdresiGuncelleResult" nillable="true" type="tns:StokResimWebAdresiGuncelleResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokResimWebAdresiGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_STOK_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GecerliKrediKartiTaksitBilgileriniGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GecerliKrediKartiTaksitBilgileriniGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GecerliKrediKartiTaksitBilgileriniGetirResult" type="tns:KrediKartiTaksitBilgisiGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="KrediKartiTaksitBilgisiGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaksitBilgileri" type="tns:ArrayOfKrediKartiTaksitBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfKrediKartiTaksitBilgisi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KrediKartiTaksitBilgisi" nillable="true" type="tns:KrediKartiTaksitBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KrediKartiTaksitBilgisi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="KartTaksitKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aciklama" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisNodanSiparisSistemNoBul">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisNodanSiparisSistemNoBulResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisNodanSiparisSistemNoBulResult" type="tns:SiparisNodanSiparisSistemNoBulResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisNodanSiparisSistemNoBulResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiparisSatiriSistemNolari" type="tns:ArrayOfSiparisSatiriSistemNo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseFaturaKesildiMi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SipariseFaturaKesildiMiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SipariseFaturaKesildiMiResult" type="tns:SipariseFaturaKesildiMiResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseFaturaKesildiMiResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FaturaKesildi" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="FaturaSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FaturaNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokBilgisiGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="stokSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="stokKodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StokBilgisiGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StokBilgisiGetirResult" type="tns:StokBilgisiGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokBilgisiGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokAdi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarkaKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarkaAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NitelikSistemNo" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="NitelikKodu" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="NitelikAdi" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="AltStoklar" type="tns:ArrayOfStokAltStok" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EkSaha7" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokDepoAdetBilgisiGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="marka" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stokKodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="altStokKodu" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="stokKaliteDerecesi" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StokDepoAdetBilgisiGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StokDepoAdetBilgisiGetirResult" type="tns:StokDepoAdetBilgisiGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokDepoAdetBilgisiGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokDepoAdetBilgileri" type="tns:ArrayOfStokDepoAdetBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStokDepoAdetBilgisi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokDepoAdetBilgisi" nillable="true" type="tns:StokDepoAdetBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokDepoAdetBilgisi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DepoKodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepoAdi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Miktar" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="KartNumarasindanKullanilabilirPuanBul">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kartNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KartNumarasindanKullanilabilirPuanBulResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KartNumarasindanKullanilabilirPuanBulResult" type="tns:KartNumarasindanKullanilabilirPuanBulResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="KartNumarasindanKullanilabilirPuanBulResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="KullanilabilirPuan" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="KullanilabilirPuanTLKarsiligi" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EFaturaMukellefSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vergiNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EFaturaMukellefSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EFaturaMukellefSorgulaResult" type="tns:EFaturaMukellefSorgulaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EFaturaMukellefSorgulaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EFaturaMukellefi" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdentifierNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Alias" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegisterTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AnlikSiparisIptaliYap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnlikSiparisIptaliYapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnlikSiparisIptaliYapResult" type="tns:AnlikSiparisIptaliYapResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AnlikSiparisIptaliYapResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisIadesiSistemNo" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptalTalebiOlustur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptalTalebiOlusturResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptalTalebiOlusturResult" type="tns:SiparisIptalTalebiOlusturResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisIptalTalebiOlusturResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SatisIadesiKaydet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisBaslik" type="tns:SiparisBaslik" />
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="odemeSatirlari" type="tns:ArrayOfOdemeSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="dipIskontoSatirlari" type="tns:ArrayOfDipIskontoSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SatisIadesiKaydetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SatisIadesiKaydetResult" type="tns:SatisIadesiKaydetResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SatisIadesiKaydetResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SatisIadesiSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisinKargoTakipLinkiniGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kargoTakipLinki" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisinKargoTakipLinkiniGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisinKargoTakipLinkiniGuncelleResult" type="tns:SiparisinKargoTakipLinkiniGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisinKargoTakipLinkiniGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikMarkalariGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametre" type="tns:SipariseAcikMarkalariGetirArgs" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikMarkalariGetirArgs">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaOid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikMarkalariGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikMarkalariGetirResult" type="tns:SipariseAcikMarkalariGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikMarkalariGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikMarkaListesi" type="tns:ArrayOfMarka" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMarka">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Marka" nillable="true" type="tns:Marka" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Marka">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_ADI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStoklariGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametreler" type="tns:SipariseAcikStokKartiGetirArgs" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokKartiGetirArgs">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BuZamandanItibarenGetirilsin" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaOid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokOid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStoklariGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikStoklariGetirResult" type="tns:SipariseAcikStokKartiGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokKartiGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokKartlari" type="tns:ArrayOfSipariseAcikStokKarti" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSipariseAcikStokKarti">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SipariseAcikStokKarti" nillable="true" type="tns:SipariseAcikStokKarti" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SipariseAcikStokKarti">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_MARKA_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIRIM_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIRIM_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK1_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK2_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK2_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK3_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RENK3_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK1_VAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK2_VAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_TAKIBI_VAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEZON_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SEZON_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_STOK_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_RENK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_RENK_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_KISA_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_DETAY_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_META_TITLE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_META_DESCRIPTION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ETICARET_META_KEYWORDS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PS_KDV_YUZDESI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK1_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK1_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK2_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK2_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK2_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK3_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK3_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK3_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK4_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK4_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK4_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK5_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK5_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK5_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK6_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK6_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK6_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK7_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK7_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK7_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK8_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK8_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK8_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK9_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK9_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK9_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK10_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK10_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK10_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK11_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK11_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK11_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK12_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK12_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK12_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK13_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK13_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK13_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK14_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK14_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK14_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK15_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK15_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK15_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK16_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK16_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK16_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK17_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK17_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK17_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK18_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK18_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK18_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK19_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK19_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK19_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK20_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK20_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK20_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK21_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK21_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK21_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK22_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK22_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK22_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK23_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK23_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK23_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK24_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK24_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK24_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_NITELIK25_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK25_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_NITELIK25_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EK_SAHA7" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESKI_STOK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KISA_ADI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KISA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="INS_TIME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPD_TIME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DELETED" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DEL_TIME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barkodlar" type="tns:ArrayOfBarkod" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBarkod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Barkod" nillable="true" type="tns:Barkod" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Barkod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BARKOD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK2_KODU" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStokMiktarMaliyetGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametreler" type="tns:SipariseAcikStokMiktarMaliyetAcikSiparisGetirArgs" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokMiktarMaliyetAcikSiparisGetirArgs">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BuZamandanItibarenGetirilsin" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaOid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokOid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStokMiktarMaliyetGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikStokMiktarMaliyetGetirResult" type="tns:SipariseAcikStokMiktarMaliyetAcikSiparisGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokMiktarMaliyetAcikSiparisGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikStokMiktarMaliyetAcikSiparisListesi" type="tns:ArrayOfSipariseAcikStokMiktarMaliyetAcikSiparisGetir" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSipariseAcikStokMiktarMaliyetAcikSiparisGetir">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SipariseAcikStokMiktarMaliyetAcikSiparisGetir" nillable="true" type="tns:SipariseAcikStokMiktarMaliyetAcikSiparisGetir" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SipariseAcikStokMiktarMaliyetAcikSiparisGetir">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_STOK_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KODU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_ALTYER_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALT_YER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALT_YER_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MALIYET" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK2_KODU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="STOK_MIKTARI" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACIK_SIPARIS_MIKTARI" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokMiktarMaliyetGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametreler" type="tns:StokMikPrm" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokMikPrm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BuZamandanItibarenGetirilsin" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaOid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokOid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AltyerlerTopluGonderilsin" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmniyetStokDusulsun" nillable="true" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="StokMiktarMaliyetGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StokMiktarMaliyetGetirResult" type="tns:StokMiktarMaliyetGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StokMiktarMaliyetGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StokList" type="tns:ArrayOfStokList" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStokList">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StokList" nillable="true" type="tns:StokList" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StokList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_STOK_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KODU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HSTK_ALTYER_OID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALT_YER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALT_YER_ACIKLAMA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MALIYET" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK1_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALTSTOK2_KODU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="STOK_MIKTARI" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ACIK_SIPARIS_MIKTARI" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="BARKOD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SEVK_EMRI_MIKTARI" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStokFiyatlariniGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametreler" type="tns:SipariseAcikStokFiyatlariniGetirArgs" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokFiyatlariniGetirArgs">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BuZamandanItibarenGetirilsin" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarkaOid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StokOid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SipariseAcikStokFiyatlariniGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SipariseAcikStokFiyatlariniGetirResult" type="tns:SipariseAcikStokFiyatlariniGetirResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SipariseAcikStokFiyatlariniGetirResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FiyatListesi" type="tns:ArrayOfFiyat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFiyat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Fiyat" nillable="true" type="tns:Fiyat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Fiyat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MARKA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="STOK_KODU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT_TIPI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT_SEKLI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT_GECERLILIK_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGULE_FIYAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HSTK_STOK_OID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARA_BIRIMI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGULE_FIYAT_TL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIYAT_TL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisDetaySeriNoGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisDetayOid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="yeniSeriNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisDetaySeriNoGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisDetaySeriNoGuncelleResult" type="tns:SiparisteSeriNoGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisteSeriNoGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FaturaDetaySeriNoGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="faturaDetayOid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="yeniSeriNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FaturaDetaySeriNoGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FaturaDetaySeriNoGuncelleResult" type="tns:FaturadaSeriNoGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FaturadaSeriNoGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriEkleTekil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="musteri" type="tns:Musteri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+            <s:element minOccurs="0" maxOccurs="1" name="kart" type="tns:MusteriKarti" />
+            <s:element minOccurs="1" maxOccurs="1" name="satisYeriOid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MusteriKarti">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="KART_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ASIL_EK" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ASIL_HKART_KART_OID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KART_BASVURU_TARIHI" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="KART_BASVURU_HSTK_SATISYERI_OID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriEkleTekilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MusteriEkleTekilResult" type="tns:MusteriKaydetResultTekil" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MusteriKaydetResultTekil">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriSistemNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KartSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+            <s:element minOccurs="0" maxOccurs="1" name="cepKartNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="epostaAdresi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MusteriSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MusteriSorgulaResult" type="tns:MusteriSorgulaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MusteriSorgulaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriBulundu" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MusteriAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MusteriSoyadi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Adres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CepTel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IlceSemt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="KartSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="KartNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TelefonDogrulamaBilgisi" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EPostadogrulamaBilgisi" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMSIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EMailIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CepTelIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="KVKKOnayiAlindi" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MusteriGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+            <s:element minOccurs="0" maxOccurs="1" name="cepNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="epostaAdresi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="musteriOid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="guncelMusteriBilgileri" type="tns:Musteri" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MusteriGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MusteriGuncelleResult" type="tns:MusteriGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MusteriGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DegisenMusteriSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+            <s:element minOccurs="1" maxOccurs="1" name="buZamandanItibarenGetirilsin" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DegisenMusteriSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DegisenMusteriSorgulaResult" type="tns:DegisenMusteriSorgulaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DegisenMusteriSorgulaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Musteriler" type="tns:ArrayOfDegisenMusteri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDegisenMusteri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DegisenMusteri" nillable="true" type="tns:DegisenMusteri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DegisenMusteri">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MusteriSistemNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MusteriAdi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MusteriSoyadi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Adres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CepTel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IlceSemt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TelefonDogrulamaBilgisi" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EPostadogrulamaBilgisi" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMSIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EMailIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CepTelIletisimIzni" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="KVKKOnayiAlindi" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LojistikFirmasindanGelenIadeleriSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BuZamandanItibarenGetirilsin" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LojistikFirmasindanGelenIadeleriSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LojistikFirmasindanGelenIadeleriSorgulaResult" type="tns:LojistikFirmasındanGelenIadeleriSorgulaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LojistikFirmasındanGelenIadeleriSorgulaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IadeListesi" type="tns:ArrayOfIade" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfIade">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Iade" nillable="true" type="tns:Iade" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Iade">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Tarih" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiparisID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiparisDetayID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Miktar" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisSistemOID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisDetaySistemOID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptalEdilebilirMi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisIptaliSorgulamaSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSiparisIptaliSorgulamaSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SiparisIptaliSorgulamaSatiri" nillable="true" type="tns:SiparisIptaliSorgulamaSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SiparisIptaliSorgulamaSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_SATIR_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptalEdilebilirMiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptalEdilebilirMiResult" type="tns:SiparisIptalEdilebilirMiResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisIptalEdilebilirMiResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YanitSatirlari" type="tns:ArrayOfSiparisIptaliSorgulamaYanitiSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSiparisIptaliSorgulamaYanitiSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SiparisIptaliSorgulamaYanitiSatiri" nillable="true" type="tns:SiparisIptaliSorgulamaYanitiSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SiparisIptaliSorgulamaYanitiSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_SATIR_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DurumKodu" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aciklama" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptalEdilebilirMiTumBelge">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisSistemNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptalEdilebilirMiTumBelgeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptalEdilebilirMiTumBelgeResult" type="tns:SiparisIptalEdilebilirMiTumBelgeResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisIptalEdilebilirMiTumBelgeResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DurumKodu" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aciklama" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisIptaliSorgulamaSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturResult" type="tns:SiparisIptalEdilebilirMiResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfSiparisIptaliSorgulamaSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaResult" type="tns:SiparisIptalEdilebilirMiResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisKargoBilgisiSorgula">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="siparisOid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SiparisKargoBilgisiSorgulaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SiparisKargoBilgisiSorgulaResult" type="tns:SiparisKargoBilgisiSorgulaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SiparisKargoBilgisiSorgulaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Detaylar" type="tns:ArrayOfSatirKargoBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSatirKargoBilgisi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SatirKargoBilgisi" nillable="true" type="tns:SatirKargoBilgisi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SatirKargoBilgisi">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SiparisSatirOid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="KargoTakipLinki" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KargoTakipNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KargoFirmasi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KargoAnahtari" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KargoKullanici" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DropShippingSiparisGuncelle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siparisSatirlari" type="tns:ArrayOfDropShippingSiparisGuncellemeSatiri" />
+            <s:element minOccurs="0" maxOccurs="1" name="kullanici" type="tns:Kullanici" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDropShippingSiparisGuncellemeSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DropShippingSiparisGuncellemeSatiri" nillable="true" type="tns:DropShippingSiparisGuncellemeSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DropShippingSiparisGuncellemeSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_SATIR_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_BELGE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_FIRMASI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_BEDELI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DropShippingSiparisGuncelleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DropShippingSiparisGuncelleResult" type="tns:DropShippingSiparisGuncelleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DropShippingSiparisGuncelleResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Basarili" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YanitSatirlari" type="tns:ArrayOfDropShippingSiparisGuncellemeYanitiSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDropShippingSiparisGuncellemeYanitiSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DropShippingSiparisGuncellemeYanitiSatiri" nillable="true" type="tns:DropShippingSiparisGuncellemeYanitiSatiri" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DropShippingSiparisGuncellemeYanitiSatiri">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SIPARIS_SATIR_SISTEM_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ENTG_SIPARIS_DETAY_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_TARIHI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_FATURA_BELGE_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_FIRMASI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DROP_SHIPPING_KARGO_BEDELI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DurumKodu" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Aciklama" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BaglanilanDatabaseAdiniSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:BaglanilanDatabaseAdiniSorgula" />
+  </wsdl:message>
+  <wsdl:message name="BaglanilanDatabaseAdiniSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:BaglanilanDatabaseAdiniSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapIn">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapOut">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="KaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:Kaydet" />
+  </wsdl:message>
+  <wsdl:message name="KaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:KaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IptalEtSoapIn">
+    <wsdl:part name="parameters" element="tns:IptalEt" />
+  </wsdl:message>
+  <wsdl:message name="IptalEtSoapOut">
+    <wsdl:part name="parameters" element="tns:IptalEtResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliKaydet" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MusteriEkleSoapIn">
+    <wsdl:part name="parameters" element="tns:MusteriEkle" />
+  </wsdl:message>
+  <wsdl:message name="MusteriEkleSoapOut">
+    <wsdl:part name="parameters" element="tns:MusteriEkleResponse" />
+  </wsdl:message>
+  <wsdl:message name="StokEkleGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:StokEkleGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="StokEkleGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:StokEkleGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="StokResimWebAdresiGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:StokResimWebAdresiGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="StokResimWebAdresiGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:StokResimWebAdresiGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GecerliKrediKartiTaksitBilgileriniGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:GecerliKrediKartiTaksitBilgileriniGetir" />
+  </wsdl:message>
+  <wsdl:message name="GecerliKrediKartiTaksitBilgileriniGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:GecerliKrediKartiTaksitBilgileriniGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisNodanSiparisSistemNoBulSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisNodanSiparisSistemNoBul" />
+  </wsdl:message>
+  <wsdl:message name="SiparisNodanSiparisSistemNoBulSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisNodanSiparisSistemNoBulResponse" />
+  </wsdl:message>
+  <wsdl:message name="SipariseFaturaKesildiMiSoapIn">
+    <wsdl:part name="parameters" element="tns:SipariseFaturaKesildiMi" />
+  </wsdl:message>
+  <wsdl:message name="SipariseFaturaKesildiMiSoapOut">
+    <wsdl:part name="parameters" element="tns:SipariseFaturaKesildiMiResponse" />
+  </wsdl:message>
+  <wsdl:message name="StokBilgisiGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:StokBilgisiGetir" />
+  </wsdl:message>
+  <wsdl:message name="StokBilgisiGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:StokBilgisiGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="StokDepoAdetBilgisiGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:StokDepoAdetBilgisiGetir" />
+  </wsdl:message>
+  <wsdl:message name="StokDepoAdetBilgisiGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:StokDepoAdetBilgisiGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="KartNumarasindanKullanilabilirPuanBulSoapIn">
+    <wsdl:part name="parameters" element="tns:KartNumarasindanKullanilabilirPuanBul" />
+  </wsdl:message>
+  <wsdl:message name="KartNumarasindanKullanilabilirPuanBulSoapOut">
+    <wsdl:part name="parameters" element="tns:KartNumarasindanKullanilabilirPuanBulResponse" />
+  </wsdl:message>
+  <wsdl:message name="EFaturaMukellefSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:EFaturaMukellefSorgula" />
+  </wsdl:message>
+  <wsdl:message name="EFaturaMukellefSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:EFaturaMukellefSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnlikSiparisIptaliYapSoapIn">
+    <wsdl:part name="parameters" element="tns:AnlikSiparisIptaliYap" />
+  </wsdl:message>
+  <wsdl:message name="AnlikSiparisIptaliYapSoapOut">
+    <wsdl:part name="parameters" element="tns:AnlikSiparisIptaliYapResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalTalebiOlusturSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptalTalebiOlustur" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalTalebiOlusturSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptalTalebiOlusturResponse" />
+  </wsdl:message>
+  <wsdl:message name="SatisIadesiKaydetSoapIn">
+    <wsdl:part name="parameters" element="tns:SatisIadesiKaydet" />
+  </wsdl:message>
+  <wsdl:message name="SatisIadesiKaydetSoapOut">
+    <wsdl:part name="parameters" element="tns:SatisIadesiKaydetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisinKargoTakipLinkiniGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisinKargoTakipLinkiniGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="SiparisinKargoTakipLinkiniGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisinKargoTakipLinkiniGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikMarkalariGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SipariseAcikMarkalariGetir" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikMarkalariGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SipariseAcikMarkalariGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStoklariGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStoklariGetir" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStoklariGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStoklariGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStokMiktarMaliyetGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStokMiktarMaliyetGetir" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStokMiktarMaliyetGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStokMiktarMaliyetGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="StokMiktarMaliyetGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:StokMiktarMaliyetGetir" />
+  </wsdl:message>
+  <wsdl:message name="StokMiktarMaliyetGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:StokMiktarMaliyetGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStokFiyatlariniGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStokFiyatlariniGetir" />
+  </wsdl:message>
+  <wsdl:message name="SipariseAcikStokFiyatlariniGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SipariseAcikStokFiyatlariniGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisDetaySeriNoGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisDetaySeriNoGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="SiparisDetaySeriNoGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisDetaySeriNoGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="FaturaDetaySeriNoGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:FaturaDetaySeriNoGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="FaturaDetaySeriNoGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:FaturaDetaySeriNoGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="MusteriEkleTekilSoapIn">
+    <wsdl:part name="parameters" element="tns:MusteriEkleTekil" />
+  </wsdl:message>
+  <wsdl:message name="MusteriEkleTekilSoapOut">
+    <wsdl:part name="parameters" element="tns:MusteriEkleTekilResponse" />
+  </wsdl:message>
+  <wsdl:message name="MusteriSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:MusteriSorgula" />
+  </wsdl:message>
+  <wsdl:message name="MusteriSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:MusteriSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MusteriGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:MusteriGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="MusteriGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:MusteriGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DegisenMusteriSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:DegisenMusteriSorgula" />
+  </wsdl:message>
+  <wsdl:message name="DegisenMusteriSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:DegisenMusteriSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LojistikFirmasindanGelenIadeleriSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:LojistikFirmasindanGelenIadeleriSorgula" />
+  </wsdl:message>
+  <wsdl:message name="LojistikFirmasindanGelenIadeleriSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:LojistikFirmasindanGelenIadeleriSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalEdilebilirMiSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptalEdilebilirMi" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalEdilebilirMiSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptalEdilebilirMiResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalEdilebilirMiTumBelgeSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptalEdilebilirMiTumBelge" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptalEdilebilirMiTumBelgeSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptalEdilebilirMiTumBelgeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula" />
+  </wsdl:message>
+  <wsdl:message name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiparisKargoBilgisiSorgulaSoapIn">
+    <wsdl:part name="parameters" element="tns:SiparisKargoBilgisiSorgula" />
+  </wsdl:message>
+  <wsdl:message name="SiparisKargoBilgisiSorgulaSoapOut">
+    <wsdl:part name="parameters" element="tns:SiparisKargoBilgisiSorgulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DropShippingSiparisGuncelleSoapIn">
+    <wsdl:part name="parameters" element="tns:DropShippingSiparisGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="DropShippingSiparisGuncelleSoapOut">
+    <wsdl:part name="parameters" element="tns:DropShippingSiparisGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HititR5PSMusteriSiparisSoap">
+    <wsdl:operation name="BaglanilanDatabaseAdiniSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bağlanılan database adını config dosyasından okur ve bilgi olarak döndürür.</wsdl:documentation>
+      <wsdl:input message="tns:BaglanilanDatabaseAdiniSorgulaSoapIn" />
+      <wsdl:output message="tns:BaglanilanDatabaseAdiniSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bu metod servisin testi için kullanılabilir.</wsdl:documentation>
+      <wsdl:input message="tns:TestSoapIn" />
+      <wsdl:output message="tns:TestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Kaydet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sistemine yeni bir sipariş kaydı yapmak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:KaydetSoapIn" />
+      <wsdl:output message="tns:KaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IptalEt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sistemde kayıtlı bir müşteri siparişinin iptali için kullanılır. Sipariş belgesi silinmez, sipariş iadesi belgesi oluşturulur ve bu yeni belgenin sistem numarası döndürülür.</wsdl:documentation>
+      <wsdl:input message="tns:IptalEtSoapIn" />
+      <wsdl:output message="tns:IptalEtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliKaydet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sistemde kayıtlı bir müşteri siparişinin SATIR BAZLI iptali için kullanılır. Sipariş belgesi silinmez, sipariş iadesi belgesi oluşturulur ve bu yeni belgenin sistem numarası döndürülür.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptaliKaydetSoapIn" />
+      <wsdl:output message="tns:SiparisIptaliKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sistemine yeni perakende müşterisi eklemek için kullanılır.
+                                   TC Kimlik No ve/veya Cep Telefonu gibi alanlardan tekillik kontrolü UYGULANMAZ!</wsdl:documentation>
+      <wsdl:input message="tns:MusteriEkleSoapIn" />
+      <wsdl:output message="tns:MusteriEkleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StokEkleGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sistemine yeni stok kartı eklemek veya varolan stok kartının bilgilerini güncelleme için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:StokEkleGuncelleSoapIn" />
+      <wsdl:output message="tns:StokEkleGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StokResimWebAdresiGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sisteminde kayıtlı stok kartlarının resim web adreslerinin güncellenmesi için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:StokResimWebAdresiGuncelleSoapIn" />
+      <wsdl:output message="tns:StokResimWebAdresiGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GecerliKrediKartiTaksitBilgileriniGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Hitit ERP Sisteminde geçerli olan kredi kartı taksit bilgilerinin listesini almak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:GecerliKrediKartiTaksitBilgileriniGetirSoapIn" />
+      <wsdl:output message="tns:GecerliKrediKartiTaksitBilgileriniGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisNodanSiparisSistemNoBul">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Entegre olan sistemin sipariş numarasına karşılık gelen Hitit ERP Sipariş Sistem Numarasını almak için kullanılır.
+                                    Karşılık gelen bir sipariş bulunamazsa sistem no olarak 0 (sıfır) döndürülür.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisNodanSiparisSistemNoBulSoapIn" />
+      <wsdl:output message="tns:SiparisNodanSiparisSistemNoBulSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SipariseFaturaKesildiMi">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bir siparişe fatura kesilip kesilmediğini bulmak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SipariseFaturaKesildiMiSoapIn" />
+      <wsdl:output message="tns:SipariseFaturaKesildiMiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StokBilgisiGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bir stok kartına ait ayrıntılı bilgiler elde etmek için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:StokBilgisiGetirSoapIn" />
+      <wsdl:output message="tns:StokBilgisiGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StokDepoAdetBilgisiGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Bir stok kartına ait stok adetlerini depo bazlı olarak elde etmek için kullanılır. Özel olarak hazırlanmış bir metottur. Özellikle kullanmanız belirtilmediyse lütfen kullanmayınız.</wsdl:documentation>
+      <wsdl:input message="tns:StokDepoAdetBilgisiGetirSoapIn" />
+      <wsdl:output message="tns:StokDepoAdetBilgisiGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KartNumarasindanKullanilabilirPuanBul">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sadakat Kart numarası kullanılarak müşterinin kullanılabilir puanını bulmak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:KartNumarasindanKullanilabilirPuanBulSoapIn" />
+      <wsdl:output message="tns:KartNumarasindanKullanilabilirPuanBulSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EFaturaMukellefSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">VKN veya TCKN ile müşterinin e-fatura mükellefi olup olmadığının sorgulanması için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:EFaturaMukellefSorgulaSoapIn" />
+      <wsdl:output message="tns:EFaturaMukellefSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnlikSiparisIptaliYap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sistemde kayıtlı bir müşteri siparişinin 'Anlık İptali' için kullanılır. Siparişle ilgili Lojistik İşemrinin lojistik firmasına gönderilmemiş olması gerekir. Sipariş belgesi silinmez, sipariş iadesi belgesi oluşturulur ve bu yeni belgenin sistem numarası döndürülür.</wsdl:documentation>
+      <wsdl:input message="tns:AnlikSiparisIptaliYapSoapIn" />
+      <wsdl:output message="tns:AnlikSiparisIptaliYapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalTalebiOlustur">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sistemde kayıtlı bir müşteri siparişi için 'İptal Talebi' oluşturmak için kullanılır. Siparişle ilgili Lojistik İşemrinin lojistik firmasına gönderilmiş olması ancak emrin gerçekleştirilmemiş olması gerekir.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptalTalebiOlusturSoapIn" />
+      <wsdl:output message="tns:SiparisIptalTalebiOlusturSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SatisIadesiKaydet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sistemine yeni bir Perakende Satış İadesi (Gider Pusulası) kaydı yapmak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SatisIadesiKaydetSoapIn" />
+      <wsdl:output message="tns:SatisIadesiKaydetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisinKargoTakipLinkiniGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sistemde kayıtlı bir müşteri siparişinin ve varsa faturasının Kargo Takip Linkini güncellemek için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisinKargoTakipLinkiniGuncelleSoapIn" />
+      <wsdl:output message="tns:SiparisinKargoTakipLinkiniGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikMarkalariGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişe açık aktif markalar listesini elde etmek için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SipariseAcikMarkalariGetirSoapIn" />
+      <wsdl:output message="tns:SipariseAcikMarkalariGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStoklariGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişe açık aktif stok kartları listesini elde etmek için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SipariseAcikStoklariGetirSoapIn" />
+      <wsdl:output message="tns:SipariseAcikStoklariGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokMiktarMaliyetGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obsolete. Lütfen 'StokMiktarMaliyetGetir' metodunu kullanınız.</wsdl:documentation>
+      <wsdl:input message="tns:SipariseAcikStokMiktarMaliyetGetirSoapIn" />
+      <wsdl:output message="tns:SipariseAcikStokMiktarMaliyetGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StokMiktarMaliyetGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişe açık stokların stok miktarını, maliyetini ve açık sipariş miktarını sorgulamak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:StokMiktarMaliyetGetirSoapIn" />
+      <wsdl:output message="tns:StokMiktarMaliyetGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokFiyatlariniGetir">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişe açık fiyat şekillerinin fiyat listesini döndürür.</wsdl:documentation>
+      <wsdl:input message="tns:SipariseAcikStokFiyatlariniGetirSoapIn" />
+      <wsdl:output message="tns:SipariseAcikStokFiyatlariniGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisDetaySeriNoGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Daha önce oluşturulmuş bir sipariş detayı üzerindeki stok seri numarasını değiştirmek için kullanılır. Faturası oluşmuş ise faturası üzerinde de gerekli değişiklikler uygulanır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisDetaySeriNoGuncelleSoapIn" />
+      <wsdl:output message="tns:SiparisDetaySeriNoGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FaturaDetaySeriNoGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Daha önce oluşturulmuş bir fatura detayı üzerindeki stok seri numarasını değiştirmek için kullanılır. </wsdl:documentation>
+      <wsdl:input message="tns:FaturaDetaySeriNoGuncelleSoapIn" />
+      <wsdl:output message="tns:FaturaDetaySeriNoGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkleTekil">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sistemine yeni perakende müşterisi eklemek için kullanılır. Tekillik Kontrolü UYGULANIR!</wsdl:documentation>
+      <wsdl:input message="tns:MusteriEkleTekilSoapIn" />
+      <wsdl:output message="tns:MusteriEkleTekilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MusteriSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sisteminden müşteri bilgisi sorgulamak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:MusteriSorgulaSoapIn" />
+      <wsdl:output message="tns:MusteriSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MusteriGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sisteminden müşteri bilgilerini güncellemek için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:MusteriGuncelleSoapIn" />
+      <wsdl:output message="tns:MusteriGuncelleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DegisenMusteriSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ERP Sisteminden değişen müşteri bilgisi sorgulamak için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:DegisenMusteriSorgulaSoapIn" />
+      <wsdl:output message="tns:DegisenMusteriSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LojistikFirmasindanGelenIadeleriSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lojistik firmasına gelen iadelerin sorgulanması için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:LojistikFirmasindanGelenIadeleriSorgulaSoapIn" />
+      <wsdl:output message="tns:LojistikFirmasindanGelenIadeleriSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMi">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişin SATIR BAZLI olarak iptal edilebilirliğinin sorgulanması için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptalEdilebilirMiSoapIn" />
+      <wsdl:output message="tns:SiparisIptalEdilebilirMiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMiTumBelge">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişin BELGE BAZLI olarak bir bütün halinde iptal edilebilirliğinin sorgulanması için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptalEdilebilirMiTumBelgeSoapIn" />
+      <wsdl:output message="tns:SiparisIptalEdilebilirMiTumBelgeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişin SATIR BAZLI olarak iptal edilebilmesi için Lojistik İşemri İptal Talebi OLUŞTURMAK için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturSoapIn" />
+      <wsdl:output message="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiOlusturSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişin SATIR BAZLI olarak iptal edilebilmesi için Lojistik İşemri İptal Talebi durumu SORGULAMAK için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaSoapIn" />
+      <wsdl:output message="tns:SiparisIptaliIcinLojistikIsemriIptalTalebiSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SiparisKargoBilgisiSorgula">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Siparişlerin kargo takip bilgilerini detayları bazında alınması için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:SiparisKargoBilgisiSorgulaSoapIn" />
+      <wsdl:output message="tns:SiparisKargoBilgisiSorgulaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DropShippingSiparisGuncelle">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Drop Shipping nitelikli siparişler için SATIR BAZLI olarak drop shipping fatura bilgilerinin güncellenmesi için kullanılır.</wsdl:documentation>
+      <wsdl:input message="tns:DropShippingSiparisGuncelleSoapIn" />
+      <wsdl:output message="tns:DropShippingSiparisGuncelleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HititR5PSMusteriSiparisSoap" type="tns:HititR5PSMusteriSiparisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BaglanilanDatabaseAdiniSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/BaglanilanDatabaseAdiniSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://www.hititbt.com/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kaydet">
+      <soap:operation soapAction="http://www.hititbt.com/Kaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IptalEt">
+      <soap:operation soapAction="http://www.hititbt.com/IptalEt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliKaydet">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptaliKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkle">
+      <soap:operation soapAction="http://www.hititbt.com/MusteriEkle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokEkleGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/StokEkleGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokResimWebAdresiGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/StokResimWebAdresiGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GecerliKrediKartiTaksitBilgileriniGetir">
+      <soap:operation soapAction="http://www.hititbt.com/GecerliKrediKartiTaksitBilgileriniGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisNodanSiparisSistemNoBul">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisNodanSiparisSistemNoBul" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseFaturaKesildiMi">
+      <soap:operation soapAction="http://www.hititbt.com/SipariseFaturaKesildiMi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokBilgisiGetir">
+      <soap:operation soapAction="http://www.hititbt.com/StokBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokDepoAdetBilgisiGetir">
+      <soap:operation soapAction="http://www.hititbt.com/StokDepoAdetBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KartNumarasindanKullanilabilirPuanBul">
+      <soap:operation soapAction="http://www.hititbt.com/KartNumarasindanKullanilabilirPuanBul" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EFaturaMukellefSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/EFaturaMukellefSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnlikSiparisIptaliYap">
+      <soap:operation soapAction="http://www.hititbt.com/AnlikSiparisIptaliYap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalTalebiOlustur">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptalTalebiOlustur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SatisIadesiKaydet">
+      <soap:operation soapAction="http://www.hititbt.com/SatisIadesiKaydet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisinKargoTakipLinkiniGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisinKargoTakipLinkiniGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikMarkalariGetir">
+      <soap:operation soapAction="http://www.hititbt.com/SipariseAcikMarkalariGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStoklariGetir">
+      <soap:operation soapAction="http://www.hititbt.com/SipariseAcikStoklariGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokMiktarMaliyetGetir">
+      <soap:operation soapAction="http://www.hititbt.com/SipariseAcikStokMiktarMaliyetGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokMiktarMaliyetGetir">
+      <soap:operation soapAction="http://www.hititbt.com/StokMiktarMaliyetGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokFiyatlariniGetir">
+      <soap:operation soapAction="http://www.hititbt.com/SipariseAcikStokFiyatlariniGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisDetaySeriNoGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisDetaySeriNoGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FaturaDetaySeriNoGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/FaturaDetaySeriNoGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkleTekil">
+      <soap:operation soapAction="http://www.hititbt.com/MusteriEkleTekil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/MusteriSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/MusteriGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DegisenMusteriSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/DegisenMusteriSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LojistikFirmasindanGelenIadeleriSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/LojistikFirmasindanGelenIadeleriSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMi">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptalEdilebilirMi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMiTumBelge">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptalEdilebilirMiTumBelge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisKargoBilgisiSorgula">
+      <soap:operation soapAction="http://www.hititbt.com/SiparisKargoBilgisiSorgula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DropShippingSiparisGuncelle">
+      <soap:operation soapAction="http://www.hititbt.com/DropShippingSiparisGuncelle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HititR5PSMusteriSiparisSoap12" type="tns:HititR5PSMusteriSiparisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BaglanilanDatabaseAdiniSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/BaglanilanDatabaseAdiniSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap12:operation soapAction="http://www.hititbt.com/Test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kaydet">
+      <soap12:operation soapAction="http://www.hititbt.com/Kaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IptalEt">
+      <soap12:operation soapAction="http://www.hititbt.com/IptalEt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliKaydet">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptaliKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkle">
+      <soap12:operation soapAction="http://www.hititbt.com/MusteriEkle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokEkleGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/StokEkleGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokResimWebAdresiGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/StokResimWebAdresiGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GecerliKrediKartiTaksitBilgileriniGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/GecerliKrediKartiTaksitBilgileriniGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisNodanSiparisSistemNoBul">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisNodanSiparisSistemNoBul" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseFaturaKesildiMi">
+      <soap12:operation soapAction="http://www.hititbt.com/SipariseFaturaKesildiMi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokBilgisiGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/StokBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokDepoAdetBilgisiGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/StokDepoAdetBilgisiGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KartNumarasindanKullanilabilirPuanBul">
+      <soap12:operation soapAction="http://www.hititbt.com/KartNumarasindanKullanilabilirPuanBul" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EFaturaMukellefSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/EFaturaMukellefSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnlikSiparisIptaliYap">
+      <soap12:operation soapAction="http://www.hititbt.com/AnlikSiparisIptaliYap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalTalebiOlustur">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptalTalebiOlustur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SatisIadesiKaydet">
+      <soap12:operation soapAction="http://www.hititbt.com/SatisIadesiKaydet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisinKargoTakipLinkiniGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisinKargoTakipLinkiniGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikMarkalariGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/SipariseAcikMarkalariGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStoklariGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/SipariseAcikStoklariGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokMiktarMaliyetGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/SipariseAcikStokMiktarMaliyetGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StokMiktarMaliyetGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/StokMiktarMaliyetGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SipariseAcikStokFiyatlariniGetir">
+      <soap12:operation soapAction="http://www.hititbt.com/SipariseAcikStokFiyatlariniGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisDetaySeriNoGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisDetaySeriNoGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FaturaDetaySeriNoGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/FaturaDetaySeriNoGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriEkleTekil">
+      <soap12:operation soapAction="http://www.hititbt.com/MusteriEkleTekil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/MusteriSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MusteriGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/MusteriGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DegisenMusteriSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/DegisenMusteriSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LojistikFirmasindanGelenIadeleriSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/LojistikFirmasindanGelenIadeleriSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMi">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptalEdilebilirMi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptalEdilebilirMiTumBelge">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptalEdilebilirMiTumBelge" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptaliIcinLojistikIsemriIptalTalebiOlustur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisIptaliIcinLojistikIsemriIptalTalebiSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiparisKargoBilgisiSorgula">
+      <soap12:operation soapAction="http://www.hititbt.com/SiparisKargoBilgisiSorgula" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DropShippingSiparisGuncelle">
+      <soap12:operation soapAction="http://www.hititbt.com/DropShippingSiparisGuncelle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HititR5PSMusteriSiparis">
+    <wsdl:port name="HititR5PSMusteriSiparisSoap" binding="tns:HititR5PSMusteriSiparisSoap">
+      <soap:address location="http://78.187.196.135:7010/HititR5PSMusteriSiparisWS_TEST/HititR5PSMusteriSiparis.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HititR5PSMusteriSiparisSoap12" binding="tns:HititR5PSMusteriSiparisSoap12">
+      <soap12:address location="http://78.187.196.135:7010/HititR5PSMusteriSiparisWS_TEST/HititR5PSMusteriSiparis.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

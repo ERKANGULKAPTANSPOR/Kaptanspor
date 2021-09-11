@@ -1,0 +1,215 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using KaptanAdidas.Models
+@model PagedList<KaptanAdidas.Models.Urun>
+@*@model  List<Urun>*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@section Head{
+    <style>
+        .pagination > li {
+            padding: 10px;
+            border: 1px solid #DDD;
+            border-radius: 4px;
+        }
+
+            .pagination > li.active {
+                background-color: #f6f6f6;
+            }
+    </style>
+}
+<br />
+<br />
+<br />
+<br />
+<center>
+    <div class="container">
+        @using (Html.BeginForm())
+        {
+            <div style="width:25%; float:left">
+                @Html.TextBox("ara", null, new { @class = "form-control", @placeholder = "Ürün Adı veya açıklama arayınız" })
+                <div style="float:left">
+                    <input type="submit" name="btn" value="Ara" class="btn btn-info" id="searchText" />
+                </div>
+                <br />
+            </div>
+        }
+
+    </div>
+</center>
+<br />
+<br />
+<a href="/Urun/Ekle" class="btn btn-primary">EKLE</a>
+<br />
+<br />
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <tr>
+            <th>Resim</th>
+            <th>Ad</th>
+            <th>Barkod</th>
+            <th>Acıklama</th>
+            @*<th>Populer</th>*@
+            <th>Fiyat</th>
+            <th>Stok</th>
+            <th>Stok Kodu</th>
+            <th>BarkodYazdır</th>
+            @if (User.IsInRole("A"))
+            {
+
+                <th>Sil</th>
+                <th>Düzenle</th>
+            }
+
+
+            @if (User.IsInRole("U"))
+            {
+                <th>Sepete Ekle</th>
+            }
+        </tr>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="~/Content/Image/@item.Resim" width="80" height="80" /></td>
+                    <td style="font-size: 11px;">@item.Ad</td>
+                    <td>@item.Barkod</td>
+                    <td>
+                        @(!string.IsNullOrEmpty(item.Aciklama) && item.Aciklama.Length > 25 ? item.Aciklama.Substring(0, 25) + "..." : item.Aciklama)
+                    </td>
+                    @*<td>
+                            @if (item.Populer == true)
+                            {
+                                <label class="btn btn-success">EVET</label>
+                            }
+                            else
+                            {
+                                <label class="btn btn-danger">Hayır</label>
+                            }
+                        </td>*@
+                    <td>@item.Fiyat</td>
+                    <td>@item.Stok</td>
+                    <td>@item.StokKodu</td>
+                    @if (User.IsInRole("A"))
+                    {
+
+                        <td><a href="#" onclick="GetBarcode(@(item.Barkod))" class="btn btn-default">BARKODYAZ</a></td>
+                        <td>@Html.ActionLink("Sil", "Sil", new { id = item.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Silmek İstiyormusunuz ?')" })</td>
+                        <td><a href="/Urun/Guncelle/@item.Id" class="btn btn-danger">DUZENLE</a></td>
+
+
+                    }
+                    @if (User.IsInRole("U"))
+                    {
+                        <td><a href="/Sepet/SepeteEkle/@item.Id" class="btn btn-success">SEPETE EKLE</a></td>
+                    }
+
+                </tr>
+                <tr id="imgLoader"></tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="9">
+                    Ürün bulunamadı
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
+<div class="modal fade" id="barcodemodal" tabindex="-1" role="dialog" aria-labelledby="barcodemodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="barcodemodal">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center" id="barcodeprintdiv">
+                <img src="#" alt="Alternate Text" id="barcodeprint" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button type="button" onclick="PrintImage()" class="btn btn-primary"><i class="fa fa-print"></i>Barkod Yazdır</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-footer py-4">
+    @Html.PagedListPager(Model, sayfa => Url.Action("Index", new { sayfa }), PagedListRenderOptions.Classic)
+</div>
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $('#searchText').focus();
+            $('#ara').focus();
+        }
+        @*<img style="width: 150px;" src="@String.Format("data:image/png;base64,{0}", ViewBag.Barcode)" />*@
+
+        function GetBarcode(barcode) {
+            console.log("BARCODE ::: ", barcode);
+            let url = "/Urun/BarkodYaz/" + barcode;
+            $.ajax({
+                url: url,
+                type: "GET",
+                contentType: "application/json",
+                dataType: "json",
+                success: function (res) {
+                    console.log("RES ::: ", res);
+                    if (res.success) {
+                        let imageurl = "/barcodes/" + barcode + ".jpeg";
+                        $('#barcodeprint').attr("src", imageurl);
+                        $('#barcodemodal').modal('show');
+                    } else {
+                        window.alert("Barkod oluşturulamadı.")
+                    }
+                },
+                error: function (err) {
+                    console.log("ERR ::: ", err);
+                    window.alert("Barkod oluşturulamadı.Lütfen Geliştiricinize başvurunuz..")
+                }
+            });
+        }
+
+        function ImagetoPrint(source) {
+
+            return "<html><head><scri" + "pt>function step1(){\n" +
+                "setTimeout('step2()', 10);}\n" +
+                "function step2(){window.print();window.close()}\n" +
+                "</scri" + "pt></head><body onload='step1()'>\n" +
+                "<img src='" + source + "' /></body></html>";
+        }
+
+        function PrintImage(source) {
+            var imgname = document.getElementById("barcodeprint").src;
+            console.log(imgname);
+
+            var Pagelink = "about:blank";
+            var pwa = window.open(Pagelink, "_new");
+            pwa.document.open();
+            pwa.document.write(ImagetoPrint(imgname));
+            pwa.document.close();
+        }
+        function PrintElem(barcode) {
+            var mywindow = window.open('', 'PRINT', 'height=400,width=400');
+
+            mywindow.document.write('<html><head><title>' + document.title + '</title>');
+
+
+            mywindow.document.close(); // necessary for IE >= 10
+            mywindow.focus(); // necessary for IE >= 10*/
+
+            mywindow.print();
+            return true;
+        }
+    </script>
+
+}

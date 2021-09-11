@@ -1,0 +1,40 @@
+﻿@using KaptanAdidas.Models
+@model List<Kategori>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<a href="/Kategori/Ekle" class="btn btn-primary">EKLE</a>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Ad</th>
+        <th>Aciklama</th>
+        @if (User.IsInRole("A"))
+        {
+            <th>Sil</th>
+            <th>Düzenle</th>
+        }
+        
+    </tr>
+    @foreach(var item in Model)
+    {
+    <tr>
+        <td>@item.Ad</td>
+        <td>@item.Aciklama</td>
+        @if (User.IsInRole("A"))
+        {
+            <td>@Html.ActionLink("Sil", "Sil", new { id = item.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Silmek İstiyormusunuz ?')" })</td>
+            <td><a href="/Kategori/Guncelle/@item.Id" class="btn btn-danger">DUZENLE</a></td>
+
+        }
+    </tr>
+    }
+
+</table> 
+

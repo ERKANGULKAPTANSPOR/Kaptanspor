@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Urunler7";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var resultObj = ViewBag.Siparisler;
+    DateTime dt = ViewBag.Date;
+}
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        @*<form method="post" action="/Urun/Urunler7">
+                            <input type="date" placeholder="getirilecek tarih aralığı girin." name="date" />
+                            <button class="btn btn-primary">ARA</button>
+                        </form>*@
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">Son Bir Günlük Siparişe Açık Stok Miktar Maliyet Açık Sipariş Listesi Ekranı</h3>
+                    </div>
+                    <div class="col text-right">
+                        @*<a href="/Urun/Urunler2" class="btn btn-sm btn-primary">TARİH ARALIKLI SİPARİŞE AÇIK STOK LİSTESİ</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">YERI</th>
+                            <th scope="col">STOK SISTEM NO</th>
+                            <th scope="col">MALIYET</th>
+                            <th scope="col">MARKA KODU</th>
+                            <th scope="col">STOK KODU</th>
+                            <th scope="col">STOK MİKTARI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (resultObj.SipariseAcikStokMiktarMaliyetAcikSiparisListesi != null)
+                        {
+                            foreach (var item in resultObj.SipariseAcikStokMiktarMaliyetAcikSiparisListesi)
+                            {
+                                <tr>
+                                    <td scope="row">
+                                        @item.ALT_YER_ACIKLAMA
+                                    <a class="btn btn-primary" href="/urun/urunler4?stokoid=@item.HSTK_STOK_OID">ÜRÜN FİYAT İZLE</a>
+                                </td>
+                                <td>@item.HSTK_STOK_OID</td>
+                                <td>@item.MALIYET</td>
+                                <td>@item.MARKA_KODU</td>
+                                <td>@item.STOK_KODU</td>
+                                <td>@item.STOK_MIKTARI</td>
+                            </tr>
+
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

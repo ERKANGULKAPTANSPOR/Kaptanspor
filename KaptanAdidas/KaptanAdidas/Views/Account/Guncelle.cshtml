@@ -1,0 +1,49 @@
+﻿@model KaptanAdidas.Models.Kullanici
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<form method="post">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="form-group">
+            <label>Ad</label>
+            <input type="text" name="Ad" value="@Model.Ad" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Soyad</label>
+            <input type="text" name="Soyad" value="@Model.Soyad" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Kullanici Adi</label>
+            <input type="text" name="Soyad" value="@Model.KuallaniciAd" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>EMail</label>
+            <input type="text" name="Soyad" value="@Model.EMail" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Sifre</label>
+            <input type="text" name="Soyad" value="@Model.Sifre" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Sifre Tekrar</label>
+            <input type="text" name="Soyad" value="@Model.SifreTekrar" class="form-control" />
+        </div>,
+        <button type="submit" class="btn btn-primary">GUNCELLE</button>
+    </div>
+</form>
+
+
+
+
+
+

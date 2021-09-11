@@ -1,0 +1,34 @@
+﻿@using KaptanAdidas.Models
+@model  List<Urun>
+@{
+    ViewBag.Title = "KritikStok";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Ürün Bilgisi</th>
+        <th>Stok</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        if (item.Stok < 50)
+        {
+         <tr style="background-color:red">
+            <td>@item.Ad</td>
+            <td>@item.Stok</td>
+        </tr>
+        }
+        if(item.Stok==50)
+        {
+          <tr style="background-color:yellow">
+            <td>@item.Ad</td>
+            <td>@item.Stok</td>
+        </tr>
+        }
+
+    }
+
+
+</table>
+

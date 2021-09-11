@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Urunler6";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var urun = ViewBag.Urun;
+}
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form method="post" action="/Urun/Urunler6">
+                            <span>Barkod No :</span>
+                            <input type="text" placeholder="sistemimizde mevcut olan barkod ile arayın." name="barkod" />
+                            <button class="btn btn-primary">ARA</button><br /><br />
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">DBDEKİ BARKODLA ÜRÜN SORGULAMA</h3>
+                    </div>
+                    <div class="col text-right">
+
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <tr>
+                        <th scope="col">STOKKODU</th>
+                        <th>STOK ADİ</th>
+                        <th>MARKA ADİ</th>
+                        <th>MALİYET</th>
+                        <th>MİKTAR</th>
+                        <th>SEVK EMRİ MİKTARI</th>
+                        <th>AÇIK SİPARİŞ MİKTARI</th>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">@urun.StokKodu</td>
+                        <td>@urun.StokAdi</td>
+                        <td>@urun.MarkaAdi</td>
+                        <td>@urun.Maliyet TL</td>
+                        <td>@urun.Miktar</td>
+                        <td>@urun.AcikSiparisMiktari</td>
+                        <td>@urun.SevkEmriMiktari</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

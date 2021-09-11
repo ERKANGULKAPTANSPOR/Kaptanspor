@@ -1,0 +1,73 @@
+﻿@model KaptanAdidas.Models.Urun
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h3 class="mb-0">STOK EKLEME EKRANI</h3>
+                    </div>
+                    <div class="col text-right">
+
+                    </div>
+                </div>
+            </div>
+
+            @using (Html.BeginForm("Ekle", "Urun", FormMethod.Post, new { enctype = "multipart/Form-data" }))
+            {
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Barkod</label>
+                    <input type="text" name="Barkod" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Ad</label>
+                    <input type="text" name="Ad" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Aciklama</label>
+                    <input type="text" name="Aciklama" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Resim", new { @class = "control-label col-md-2" })
+                    <input type="file" name="File" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Stok</label>
+                    <input type="text" name="Stok" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Stok Kodu</label>
+                    <input type="text" name="StokKodu" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Fiyat</label>
+                    <input type="text" name="Fiyat" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <input name="populer" value="false" type="hidden" />
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori</label>
+                    @Html.DropDownListFor(x => x.KategoriId, (List<SelectListItem>)ViewBag.ktgr, new { @class = "form-control" })
+                </div>
+                <button class="btn btn primary" type="submit">EKLE</button>
+                <a href="/Urun/Index">Ürün Listele</a>
+            </div>
+                    }
+
+                </div>
+            </div>
+</div>
+
+
+

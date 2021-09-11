@@ -1,0 +1,132 @@
+﻿@{
+    ViewBag.Title = "Urunler2";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var resultObj = ViewBag.ResultObj;
+    DateTime dt = DateTime.Parse(ViewBag.Date);
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header border-0">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form method="post" action="/Urun/Urunler2">
+                            <input type="date" placeholder="Ürün ID sini girin" name="date" />
+                            <button class="btn btn-primary">ARA</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3 class="mb-0">( @dt.ToString("dd, MMMM yyyy") Tarihinden İtibaren )Tarih Bazlı Stok Sorgulama Ekranı</h3>
+                    </div>
+                    <div class="col text-right">
+                        @*<a href="/Urun/Urunler2" class="btn btn-sm btn-primary">TARİH ARALIKLI SİPARİŞE AÇIK STOK LİSTESİ</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">STOK KODU</th>
+                            <th scope="col">STOK ADI - ID</th>
+                            <th scope="col">Barkodları</th>
+                            <th scope="col">STOK VAR MI(Stok1,Stok2)</th>
+                            <th scope="col">MARKA OID</th>
+                            <th scope="col">MARKA ADI, RENK</th>
+                            <th scope="col">BİRİM KODU</th>
+                            <th scope="col">BİRİM AÇIKLAMASI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (resultObj.StokKartlari != null)
+                        {
+                            foreach (var item in resultObj.StokKartlari)
+                            {
+                                <tr>
+                                    <td scope="row">@item.STOK_KODU
+                                    <a class="btn btn-primary" href="/urun/urunler4?stokoid=@item.OID">ÜRÜN FİYAT İZLE</a>
+                                    </td>
+                                    <td>@item.STOK_ADI - @item.OID</td>
+                                    <td>
+                                        @(item.Barkodlar != null ? item.Barkodlar[0].BARKOD : "BARKODYOK")
+                                        @*@if (item.Barkodlar != null && item.Barkodlar.Length > 0)
+                                            {
+                                                foreach (var subItem in item.Barkodlar)
+                                                {
+                                                    @subItem.BARKOD <br /> <hr />
+                                                }
+                                            }*@
+                                    </td>
+                                    <td>@item.ALTSTOK1_VAR - @item.ALTSTOK2_VAR</td>
+                                    <td>@item.HSTK_MARKA_OID</td>
+                                    <td>@item.MARKA_ADI - @item.RENK_ACIKLAMA</td>
+                                    <td>@item.BIRIM_KODU</td>
+                                    <td>@item.BIRIM_ACIKLAMA</td>
+                                </tr>
+
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@*<h2>30 MAYIS 2021 TARİHİNDEN İTİBAREN SİPARİŞE AÇIK STOK LİSTESİ</h2>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <th>STOK VAR MI(Stok1,Stok2)</th>
+                <th>MARKA ADI, RENK, STOK ADI</th>
+                <th>BİRİM KODU</th>
+                <th>BİRİM AÇIKLAMASI</th>
+                <th>MARKA OID</th>
+                <th>NITELIK10 KODU</th>
+                <th>NITELIK11</th>
+                <th>NITELIK12</th>
+                <th>NITELIK13</th>
+                <th>NITELIK14</th>
+                <th>NITELIK15</th>
+                <th>NITELIK16</th>
+                <th>Barkodları</th>
+            </tr>
+            @if (resultObj.StokKartlari != null)
+            {
+                foreach (var item in resultObj.StokKartlari)
+                {
+                    <tr>
+                        <td>@item.ALTSTOK1_VAR - @item.ALTSTOK2_VAR</td>
+                        <td>@item.MARKA_ADI - @item.RENK_ACIKLAMA - @item.STOK_ADI</td>
+                        <td>@item.BIRIM_KODU</td>
+                        <td>@item.BIRIM_ACIKLAMA</td>
+                        <td>@item.HSTK_MARKA_OID</td>
+                        <td>@item.HSTK_NITELIK10_OID</td>
+                        <td>@item.HSTK_NITELIK11_OID</td>
+                        <td>@item.HSTK_NITELIK12_OID</td>
+                        <td>@item.HSTK_NITELIK13_OID</td>
+                        <td>@item.HSTK_NITELIK14_OID</td>
+                        <td>@item.HSTK_NITELIK15_OID</td>
+                        <td>@item.HSTK_NITELIK16_OID</td>
+                        <td>
+                            @if (item.Barkodlar != null && item.Barkodlar.Length > 0)
+                            {
+                                foreach (var subItem in item.Barkodlar)
+                                {
+                                    @subItem.BARKOD <br /> <hr />
+                                }
+                            }
+                        </td>
+                    </tr>
+
+                }
+            }
+        </table>
+    </div>
+</div>*@

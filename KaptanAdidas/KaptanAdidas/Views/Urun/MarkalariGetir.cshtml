@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "MarkalariGetir";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+
+    var markalar = ViewBag.Markalar;
+}
+<br />
+<br />
+<br />
+<br />
+
+<h2>Marka Listesi Ekranı</h2>
+
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead>
+            <tr>
+                <th>OID</th>
+                <th>Marka Adı</th>
+                <th>Marka Kodu</th>
+                @if (User.IsInRole("A"))
+                {
+
+                    <th>Sil</th>
+                    <th>Düzenle</th>
+                }
+
+
+                @if (User.IsInRole("U"))
+                {
+                    <th>Sepete Ekle</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (markalar != null && markalar.SipariseAcikMarkaListesi != null)
+            {
+                foreach (var item in markalar.SipariseAcikMarkaListesi)
+                {
+                    <tr>
+                        <td>@item.OID</td>
+                        <td>@item.MARKA_ADI</td>
+                        <td>@item.MARKA_KODU</td>
+                        @if (User.IsInRole("A"))
+                        {
+
+                            <td><a href="#" onclick="GetBarcode(@(item.Barkod))" class="btn btn-default">BARKODYAZ</a></td>
+                            <td>@Html.ActionLink("Sil", "Sil", new { id = item.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Silmek İstiyormusunuz ?')" })</td>
+                            <td><a href="/Urun/Guncelle/@item.Id" class="btn btn-danger">DUZENLE</a></td>
+
+
+                        }
+                        @if (User.IsInRole("U"))
+                        {
+                            <td><a href="/Sepet/SepeteEkle/@item.Id" class="btn btn-success">SEPETE EKLE</a></td>
+                        }
+
+                    </tr>
+                    <tr id="imgLoader"></tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9">
+                        Ürün bulunamadı
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

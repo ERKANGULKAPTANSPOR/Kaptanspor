@@ -1,0 +1,89 @@
+﻿@using KaptanAdidas.Models
+@model  List<Kullanici>
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="container">
+    <br />
+    <br />
+    <br />
+    <div class="row">
+        <div class="form-group col-md-12">
+
+            <div class="card-header">
+                <h3 class="card-title">Kullanıcı Listesi</h3>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Ad</td>
+                            <td>Soyad</td>
+                            <td>Email</td>
+                            <td>Sifre</td>
+                            <td>SifreTekrar</td>
+                            <td>Rol</td>
+                            <td>Onay Durumu</td>
+                            <td>İşlemler</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Count > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Ad</td>
+                                    <td>@item.Soyad</td>
+                                    <td>@item.EMail</td>
+                                    <td>@item.Sifre</td>
+                                    <td>@item.SifreTekrar</td>
+                                    <td>@item.Rol</td>
+                                    @if (item.State == 0)
+                                    {
+                                        <td><span class="primary">Onay Bekliyor</span></td>
+                                        <td>
+                                            <a style="color:white;" href="/Account/UserAccept/@item.Id" class="btn btn-sm btn-success"><i class="fa fa-check"></i>Onayla</a>
+                                            <a style="color:white;" href="/Account/UserReject/@item.Id" class="btn btn-sm btn-danger"><i class="fa fa-check"></i>Reddet</a>
+                                        </td>
+
+                                    }
+                                    else if (item.State == 2)
+                                    {
+                                        <td><span class="danger">Reddedilmiş</span></td>
+                                        <td>
+                                            <a style="color:white;" href="/Account/UserAccept/@item.Id" class="btn btn-sm btn-success"><i class="fa fa-check"></i>Onayla</a>
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td><span class="danger">Veri Alanı Boş</span></td>
+                                    }
+
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="7">Kullanıcı Bulunmamaktadır.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+@section Scripts{
+   
+}
